@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Help</title>
+  </head>
+  <body>
+    <h1>Power On PS4</h1>
+    <p><a href='/on'>/on</a></p>
+
+    <h2>Launch Application</h2>
+    <p>/on?app=&lt;TITLE&gt;</p>
+
+    <ul>
+      {% for title in titles %}
+        <li><a href='/on?app={{ title }}'>{{ title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <h1>Power Off PS4</h1>
+    <p><a href='/off'>/off</a></p>
+
+    <h1>Get Device Status</h1>
+    <p><a href='/status'>/status</a></p>
+  </body>
+</html>
